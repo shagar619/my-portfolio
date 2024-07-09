@@ -229,3 +229,7 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     padding: 10px 20px;
     border: none;
 }
+
+.sub-btn{
+    margin: 24px;
+}
