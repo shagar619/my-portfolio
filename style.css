@@ -28,6 +28,17 @@
     border: none;
 }
 
+.btn-contact{
+    color: rgb(253, 110, 10);
+    font-weight: bold;
+    font-size: 20px;
+    height: 60px;
+    width: 160px;
+    border: 1px solid rgb(253, 110, 10);
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
 
 .section-title{
     font-size: 35px;
@@ -111,8 +122,8 @@ nav ul{
 
 
 .banner-picture{
-    width: 500px;
-    height: 500px;
+    width: 580px;
+    
 }
 
 .banner-content{
@@ -139,8 +150,6 @@ main section{
     border-radius: 10px;
     padding: 130px 150px;
     text-align: center;
-  
-
 }
 
 
@@ -232,4 +241,80 @@ footer input[type="text"], footer input[type="email"], footer textarea{
 
 .sub-btn{
     margin: 24px;
+}
+
+
+
+
+
+
+
+/* Reponsive and Media Query   For small device */
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px){
+    .skills-container,
+     .resume-container, 
+     .about-items, 
+     .banner, 
+     nav, 
+     nav > ul
+     {
+        flex-direction: column;
+    }
+
+    footer, .about{
+        flex-direction: column;
+        padding: 0px;
+        
+    }
+
+    .footer-column{
+        width: 100%;
+    }
+
+    footer input[type="text"], footer input[type="email"], footer textarea{
+        width: calc((100% - 40px));
+    }
+
+    .banner{
+        margin: 20px;
+
+    }
+
+    .header{
+        background-image: none;
+    }
+
+    .banner-picture{
+        width: 100%;
+    }
+
+    nav > ul{
+        gap: 15px;
+    }
+
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+/* Reponsive and Media Query   For small device */
+
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+   .banner{
+    flex-direction: column;
+   } 
 }
